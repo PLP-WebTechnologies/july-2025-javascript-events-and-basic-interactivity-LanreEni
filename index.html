@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌟 Interactive Web Page</h1>
+    <button id="modeToggle">Toggle Light/Dark Mode</button>
+  </header>
+
+  <!-- Counter Game -->
+  <section>
+    <h2>🎮 Counter Game</h2>
+    <p id="counter">0</p>
+    <button id="increment">➕ Increase</button>
+    <button id="decrement">➖ Decrease</button>
+    <button id="reset">🔄 Reset</button>
+  </section>
+
+  <!-- FAQ Section -->
+  <section>
+    <h2>❓ FAQ Section</h2>
+    <div class="faq">
+      <h3 class="question">What is this project about?</h3>
+      <p class="answer">It’s about learning JavaScript interactivity! 🚀</p>
+    </div>
+    <div class="faq">
+      <h3 class="question">How does the counter work?</h3>
+      <p class="answer">Click the buttons to increase, decrease, or reset the number.</p>
+    </div>
+    <div class="faq">
+      <h3 class="question">Can I contribute?</h3>
+      <p class="answer">Of course! Try adding more interactive features.</p>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section>
+    <h2>📋 Registration Form</h2>
+    <form id="registerForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+      <span class="error" id="nameError"></span>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" required />
+      <span class="error" id="emailError"></span>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required />
+      <span class="error" id="passwordError"></span>
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" required />
+      <span class="error" id="confirmPasswordError"></span>
+
+      <button type="submit">Register</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
